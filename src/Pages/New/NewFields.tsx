@@ -1,5 +1,5 @@
 import React from 'react';
-//import NavLink from "./NavLink";
+import NavLink from "./NavLink";
 
 function NewFields() {
   return (
@@ -11,15 +11,20 @@ function NewFields() {
 				<div id="tab-3"className="tab-content">Scheduled Tasks</div> */}
 				<div id="tab-4"className="tab-content active">
 					<div className="new-add d-flex flex-wrap">
-						<div className="block">
 
+					
+						<div className="block">
+                        <NavLink to={"/template"}>
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
 									<figure><img className="img-fluid" src="Images/template-icon-v3-small.svg" alt="image"/></figure>
 									Template
 								</a>
 							</div>
+						</NavLink>
 						</div>
+                    
+
 						<div className="block">
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
@@ -28,22 +33,28 @@ function NewFields() {
                                </a>
 							</div>
 						</div>
+
 						<div className="block">
+					
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
 									<figure><img className="img-fluid" src="Images/import-accounts-icon-small.svg" alt="image"/></figure>
 									Import <br/>Receiver
 								</a>
 							</div>
+						
 						</div>
 						<div className="block">
+						<NavLink to={"/contact"}>
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
 									<figure><img className="img-fluid" src="Images/import-contacts-icon-small.svg" alt="image"/></figure>
 									Import <br/>Contacts
 								</a>
 							</div>
+						</NavLink>
 						</div>
+
 						<div className="block">
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
@@ -52,6 +63,7 @@ function NewFields() {
 								</a>
 							</div>
 						</div>
+
 						<div className="block">
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
@@ -60,16 +72,19 @@ function NewFields() {
 								</a>
 							</div>
 						</div>
-						{/* <NavLink to={"/email"}> */}
+
+						
 						<div className="block">
+						<NavLink to={"/email"}>
 							<div className="block-inner">
 								<a href="" className="d-flex align-items-center justify-content-center flex-column">
 									<figure><img className="img-fluid" src="Images/email-icon-v3.svg" alt="image"/></figure>
 									Email
 								</a>
 							</div>
+						</NavLink>
 						</div>
-						{/* </NavLink> */}
+					
 		</div>
         </div>
         </div>
